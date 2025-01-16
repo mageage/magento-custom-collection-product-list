@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Marceli Podstawski <marceli.podstawski@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="vendor_customization" frontName="vendor_customization">
+            <module name="Vendor_Customization" />
+        </route>
+    </router>
+</config>

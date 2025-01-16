@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author Marceli Podstawski <marceli.podstawski@gmail.com>
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Magento 2 custom collection product list module</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Vendor\Customization\Block\Product\CustomCollection" name="custom.product.collection" template="Magento_Catalog::product/list.phtml">
+                <block class="Magento\Catalog\Block\Product\ProductList\Toolbar" name="product_list_toolbar">
+                    <template>Magento_Catalog::product/list/toolbar.phtml</template>
+                </block>
+                <action method="setToolbarBlockName">
+                    <argument name="name" xsi:type="string">product_list_toolbar</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
