@@ -10,9 +10,10 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Vendor\Customization\Block\Product\CustomCollection" name="custom.product.collection" template="Magento_Catalog::product/list.phtml">
-                <block class="Magento\Catalog\Block\Product\ProductList\Toolbar" name="product_list_toolbar">
-                    <template>Magento_Catalog::product/list/toolbar.phtml</template>
+            <block class="Creativestyle\CompanyDiscount\Block\Pricediscount\Products" name="company_price_discount_products"
+                   template="Magento_Catalog::product/list.phtml">
+                <block class="Magento\Catalog\Block\Product\ProductList\Toolbar" name="product_list_toolbar" template="Magento_Catalog::product/list/toolbar.phtml">
+                    <block class="Magento\Theme\Block\Html\Pager" name="product_list_toolbar_pager"/>
                 </block>
                 <action method="setToolbarBlockName">
                     <argument name="name" xsi:type="string">product_list_toolbar</argument>
